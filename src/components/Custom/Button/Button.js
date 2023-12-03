@@ -8,12 +8,8 @@ const DynamicButton = ({
   name = 'Click Me',
   size = 'default',
   type = 'primary-1',
-  handleClick = defaultClickHandler // Assign default function
+  handleClick = defaultClickHandler
 }) => {
-  const onClick = () => {
-    handleClick();
-  };
-
   const buttonSize = {
     default: {},
     sm: { padding: '5px 15px' },
@@ -24,7 +20,7 @@ const DynamicButton = ({
     <button
       className={type}
       style={buttonSize[size]}
-      onClick={onClick}
+      onClick={handleClick}
     >
       {name}
     </button>
