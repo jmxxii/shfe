@@ -1,0 +1,57 @@
+.custom-select-container {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.custom-select-value {
+  flex-grow: 1;
+  color: #003b71;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.custom-select-arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.custom-select-arrow.open {
+  transform: translateY(50%) rotate(-135deg);
+}
+
+.custom-select-menu {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+  z-index: 1000;
+}
+
+.custom-select-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.custom-select-option:hover,
+.custom-select-option.selected {
+  background-color: #f0f0f0;
+}

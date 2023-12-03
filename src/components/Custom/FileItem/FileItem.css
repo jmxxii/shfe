@@ -1,0 +1,35 @@
+.file-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.file-item-content {
+  width: 100%;
+}
+
+.file-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.file-name {
+  flex-grow: 1;
+  margin-right: auto;
+  font-size: .7rem;
+}
+
+.file-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-size {
+  color: #003b71;
+  font-size: 0.7rem;
+}
